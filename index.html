@@ -1,3 +1,4 @@
+
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -7,14 +8,19 @@
   <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-app.js"></script>
     <!-- TODO: Add SDKs for Firebase products that you want to use-->
   <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-firestore.js"></script>
-  <title>Document</title>
+  <title>Cloud Cafe</title>
 </head>
 <body>
   <h1>Cloud Cafe</h1>
   
   <div class="content">
-  
-    <form id="add-cafe-form"></form>
+    
+    <form id="add-cafe-form">
+      <input type="text" name="name" placeholder="Cafe name">
+      <input type="text" name="city" placeholder="Cafe city">
+      <button>Add cafe</button>
+    </form>
+    
   
     <ul id="cafe-list"></ul>
   
@@ -24,13 +30,9 @@
   <!-- TODO: Add SDKs for Firebase products that you want to use
        https://firebase.google.com/docs/web/setup#available-libraries -->
   
-  <script type="module">
-    // Your web app's Firebase configuration
-    import firebaseConfig from './config/firestore-config.js';
-    console.log(firebaseConfig)
-    // Initialize Firebase
-    firebase.initializeApp(firebaseConfig);
-  </script>
-  <script src="app.js"></script>
+  <script src="firestore.js" type="module"></script>
+    
+    
+  <script type="module" src="app.js"></script>
 </body>
 </html>
