@@ -20,13 +20,13 @@
 
     and add this in the end of body tag:
     var firebaseConfig = {
-      apiKey: "AIzaSyBU7le-FS6MCNHjESIC7i_tRL3SFLcci94",
-      authDomain: "firestore-tut-3e32e.firebaseapp.com",
-      databaseURL: "https://firestore-tut-3e32e.firebaseio.com",
-      projectId: "firestore-tut-3e32e",
-      storageBucket: "firestore-tut-3e32e.appspot.com",
-      messagingSenderId: "429541855882",
-      appId: "1:429541855882:web:0706fde1bafbc39af2d373"
+      apiKey: "",
+      authDomain: "",
+      databaseURL: "",
+      projectId: "",
+      storageBucket: "",
+      messagingSenderId: "",
+      appId: ""
     };
 
     then you have to initialize firebase and get reference to firestore:
